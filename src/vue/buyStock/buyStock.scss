@@ -1,0 +1,139 @@
+
+@import "../../public/css/mixin";
+
+/*标题*/
+
+.buy-stock-code-tit {
+    clear: both;
+    height: 116rem/$size;
+    line-height: 116rem/$size;
+    background: #fff;
+    position: relative;
+    font-size: 0;
+}
+
+.buy-stock-code-tit:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 36rem/$size;
+    margin-left: -1px;
+    margin-top: -16rem/$size;
+    background: #dddada;
+}
+
+.buy-stock-code-tit:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #dddada;
+    -webkit-transform: scaleY(0.5);
+}
+
+.buy-stock-code-tit li {
+    display: inline-block;
+    width: 50%;
+    height: 116rem/$size;
+    position: relative;
+    font-size: 46rem/$size;
+    color: #999;
+    padding: 0 80rem/$size;
+    box-sizing: border-box;
+}
+
+.buy-stock-code-tit .tit-code {
+    position: absolute;
+    top: 0;
+    right: 80rem/$size;
+}
+
+
+/*主要内容*/
+
+.buy-stock-content {
+    box-sizing: border-box;
+    padding-bottom: 191rem/$size;
+    position: relative;
+    background: #fff;
+}
+
+.buy-stock-content li {
+    float: left;
+    width: 33.33%;
+    height: 463rem/$size;
+    text-align: center;
+    position: relative;
+}
+
+.buy-stock-content li:after {
+    content: '';
+    width: 2px;
+    height: 100rem/$size;
+    background: #dddada;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -100rem/2/$size;
+}
+
+.buy-stock-content li:last-child:after {
+    display: none;
+}
+
+.buy-stock-content .clr-a9a {
+    color: #a9a9ac;
+}
+
+.buy-stock-content li em {
+    line-height: 463rem/$size;
+    font-size: 299.52rem/$size;
+}
+
+.buy-stock-content li span {
+    position: absolute;
+    left: 0;
+    bottom: 29rem/$size;
+    text-align: center;
+    width: 100%;
+    color: #8b8b97;
+    font-size: 40rem/$size;
+    line-height: 1;
+}
+
+
+/*无内容*/
+
+.cont-null-text {
+    text-align: center;
+    color: #999;
+    font-size: 48rem/$size;
+    margin-top: 460rem/$size;
+}
+
+
+/*按钮*/
+
+.submit-btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 161rem/$size;
+    font-size: 52rem/$size;
+    background: #ff5a54;
+    color: #fff;
+}
+
+.submit-btn:disabled {
+    background: #bbb;
+}
+
+
+
