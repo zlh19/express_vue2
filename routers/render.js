@@ -7,4 +7,10 @@ module.exports=function(app){
 			title:1
 		})
 	})
+
+	app.get('/',function(req,res){
+		res.render('index',{
+			title:1
+		})
+	})
 }

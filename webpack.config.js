@@ -11,10 +11,10 @@ var BUILD_PATH = path.resolve(__dirname, 'build');
 
 var plugins = [
 	//压缩js 
-	new webpack.optimize.UglifyJsPlugin({
-    // minimize: true,
-    sourceMap: true
-  }),
+	// new webpack.optimize.UglifyJsPlugin({
+ //    // minimize: true,
+ //    sourceMap: true
+ //  }),
 	//提供用js到common.js文件中
   new webpack.optimize.CommonsChunkPlugin('common.js'),
 	//将样式统一发布到style.css中
