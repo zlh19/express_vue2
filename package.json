@@ -21,10 +21,13 @@
     "request": "^2.79.0",
     "request-json": "^0.6.1",
     "sass-loader": "^6.0.6",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.3",
     "v-tap": "^2.2.2",
     "vue": "^2.2.2",
     "vue-resource": "^1.2.1",
     "vue-router": "^2.3.0",
+    "vue-template-compiler": "^2.4.4",
     "vuex": "^2.2.1",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.18.0"

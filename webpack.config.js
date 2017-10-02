@@ -6,7 +6,7 @@ var vue = require("vue-loader");
 
 //定义了一些文件夹的路径
 // var ROOT_PATH = path.resolve();
-var APP_PATH = path.resolve(__dirname, 'src/main.js');
+var APP_PATH = path.resolve(__dirname, 'src/main.ts');
 var BUILD_PATH = path.resolve(__dirname, 'build');
 
 var plugins = [
@@ -58,6 +58,14 @@ module.exports = {
         loader: 'babel?sourceMap'
       },
       {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+        options: {
+          appendTsSuffixTo: [/\.vue$/]
+        }
+      },
+      {
         test: /\.(png|jpg|ttf)$/,
         loader: 'url?limit=40000'
       }
@@ -66,6 +74,12 @@ module.exports = {
   vue: {
     css: ExtractTextPlugin.extract("css"),
     sass: ExtractTextPlugin.extract("css!sass-loader")
+  },
+  resolve: {
+    extensions: ['','.ts','.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/build/vue.esm.js'
+    }
   },
   babel: {
     // 告诉babel你要解析的语言
