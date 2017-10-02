@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-      "outDir": "./built/",
+      "outDir": "./build/",
       "sourceMap": true,
       "strict": true,
       "module": "es2015",
       "moduleResolution": "node",
       "target": "es5",
-      "lib": [
-      "es2017",
-      "dom"
-    ]
+      "lib": ["es2017","dom"]
   },
   "include": [
-      "./src/**/*"
+      "./src/**/*",
+      "./src/main.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

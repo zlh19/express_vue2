@@ -35,7 +35,8 @@ const routes:Route[] = [{ //首页
         isLogin:0
     },
     component:()=>{
-        import('../vue/login/login.vue')
+        // import('../vue/login/login.vue')
+        require('../vue/login/login.vue')
     }
 },{
     path: '/help',
@@ -45,7 +46,7 @@ const routes:Route[] = [{ //首页
         isLogin:1
     },
     component:()=>{
-        import('../vue/help/help.vue')
+        require('../vue/help/help.vue')
     }
 },{
     path: '/buyStock',
@@ -55,7 +56,7 @@ const routes:Route[] = [{ //首页
         isLogin:1
     },
     component:()=>{
-        import('../vue/buyStock/buyStock.vue')
+        require('../vue/buyStock/buyStock.vue')
     }
 }, {
     path: '/buyRecord',
@@ -65,7 +66,7 @@ const routes:Route[] = [{ //首页
         isLogin:1
     },
     component:()=>{
-        import('../vue/buyRecord/buyRecord.vue')
+        require('../vue/buyRecord/buyRecord.vue')
     }
 }, {
     path: '/buyDay',
@@ -75,7 +76,7 @@ const routes:Route[] = [{ //首页
         isLogin:1
     },
     component:()=>{
-        import('../vue/buyDay/buyDay.vue')
+        require('../vue/buyDay/buyDay.vue')
     }
 }, {
     path: '*',

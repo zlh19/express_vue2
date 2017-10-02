@@ -6,7 +6,7 @@ import App from './App.vue'
 import router from './router/router'
 // import {store} from './store/store'
 
-// import './public/css/reset.scss';
+import './public/css/reset.scss';
 
 // 引入px与rem的换算
 // import {remToPxFun} from './public/js/model';
